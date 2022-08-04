@@ -2,10 +2,8 @@
 footer {
 	color: white;
  	max-width: $widthTotal;
-	display: $dis-flex;
-	flex-flow: $flex-col-nowrap;
+	@include display1(flex,column nowrap,space-evenly);
 	padding: 1rem;
-	justify-content: $content-evenly;
 	align-items: center;
 	align-content: center;
 }

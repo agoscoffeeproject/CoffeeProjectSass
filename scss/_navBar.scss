@@ -8,7 +8,7 @@ nav {
 				a{
 					text-transform:$mayuscula;
 					font-weight: $textBold;
-					font-size:$textSm;
+					font-size: map-get($map:$fontSizes,$key:'fSize5');
 				}
 			}
 		}

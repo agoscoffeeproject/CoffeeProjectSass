@@ -36,13 +36,7 @@ width: $widthTotal;
 margin: auto;
 }
 
-.cajas__cafe {
-width: $widthAuto;
-display: $dis-flex;
-flex-flow: $flex-row;
-margin: 1rem 0.8rem;
-justify-content: $content-evenly;
-}	
+
 
 #redes {
 display: $dis-flex;
@@ -50,6 +44,11 @@ flex-flow: $flex-row;
 margin: 1rem 0.8rem;
 }
 
+.cajas__cafe {
+width: $widthAuto;
+@include display1(flex,row nowrap,space-evenly);
+margin: 1rem 0.8rem;
+}	
 
 .imagenpie {
 max-width: $widthAuto;
@@ -177,10 +176,8 @@ article.cajas__flex {
 
 	.cajas__cafe {
  	width: $widthAuto;
-	display: $dis-flex;
-	flex-flow: $flex-row;
+ 	@include display1(flex,row nowrap,space-evenly);
 	margin: 1rem 0.8rem;
-	justify-content: $content-evenly;
  }
 
  #seguir {

@@ -10,7 +10,7 @@ nav div ul li {
 nav div ul li a {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 a::after {
@@ -66,38 +66,31 @@ form h3 {
   max-width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  margin: 1rem 1.5rem;
   justify-content: space-evenly;
+  margin: 1rem 1.5rem;
+}
+
+.titulos, .titulos__recomendados, h1 {
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 h1 {
-  font-size: 1.8rem;
-  padding: 1rem 2rem;
   font-family: "Anton", sans-serif;
   max-width: 100%;
-  text-align: center;
   background-color: whitesmoke;
 }
 
-h2 {
+.titulos__recomendados {
   font-size: 1.8rem;
-  padding: 1rem 2rem;
-  text-align: center;
-}
-
-.titulo__recomendados {
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  text-align: center;
   color: whitesmoke;
 }
 
 .cajas__flex h3 {
-  font-size: 1.2rem;
   padding: 0.5rem 2rem;
 }
 
-article.cajas__flex p {
+article.cajas__flex div p {
   font-size: 1.6rem;
   padding: 0.5rem 2rem;
 }
@@ -122,12 +115,17 @@ form {
 
 form label {
   width: 100%;
-  font-size: 2.5rem;
   padding-top: 1rem;
 }
+form label h5 {
+  font-size: 1.6rem;
+}
 
-input, textarea, select {
-  font-size: 2.5rem;
+.btn-enviar {
+  font-size: 1.4rem;
+}
+
+input, textarea, select, option {
   margin-bottom: 1rem;
   width: 100%;
   background: none;
@@ -138,8 +136,8 @@ footer {
   max-width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  padding: 1rem;
   justify-content: space-evenly;
+  padding: 1rem;
   align-items: center;
   align-content: center;
 }
@@ -189,16 +187,16 @@ figcaption {
     width: 100%;
     margin: auto;
   }
+  #redes {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1rem 0.8rem;
+  }
   .cajas__cafe {
     width: auto;
     display: flex;
     flex-flow: row nowrap;
-    margin: 1rem 0.8rem;
     justify-content: space-evenly;
-  }
-  #redes {
-    display: flex;
-    flex-flow: row nowrap;
     margin: 1rem 0.8rem;
   }
   .imagenpie {
@@ -288,8 +286,8 @@ figcaption {
     width: auto;
     display: flex;
     flex-flow: row nowrap;
-    margin: 1rem 0.8rem;
     justify-content: space-evenly;
+    margin: 1rem 0.8rem;
   }
   #seguir {
     text-align: center;

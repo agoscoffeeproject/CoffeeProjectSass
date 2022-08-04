@@ -6,7 +6,7 @@
 }
 
 html {
-	font-size: $fontSize;
+	font-size:$fontSize;
 	font-family:$fontMain;
 }
 
@@ -26,47 +26,42 @@ form {
 .cajas__flex {
 	background-color: $bg-white;
  	max-width: $widthTotal;
-	display: $dis-flex;
-	flex-flow: $flex-col-nowrap;
+ 	@include display1(flex,column nowrap,space-evenly);
 	margin: 1rem 1.5rem;
-	justify-content: $content-evenly;
+}
+
+.titulos {
+	padding: 1rem 2rem;
+	text-align:$text-center;
+
 }
 
 h1 {
-	font-size: $textMd;
-	padding: 1rem 2rem;
+	@extend .titulos;
 	font-family: $secondaryFont;
 	max-width: $widthTotal;
-	text-align: $text-center;
 	background-color: $bg-titulos;
 }
 
 
-h2{
-	font-size:$textMd;
-	padding: 1rem 2rem;
-	text-align:$text-center;
-
-}
-
-.titulo__recomendados {
-	font-size: $textSm;
-	padding: 1rem 2rem;
-	text-align:$text-center;
+.titulos__recomendados {
+	font-size: map-get($map:$fontSizes,$key:'fSize5');
+	@extend .titulos;
 	color: whitesmoke;
 }
 
 .cajas__flex {
 	h3 {
-		font-size: $textXm;
 		padding: 0.5rem 2rem;
 	}
 }
 
 article.cajas__flex { 
+	div {
 	p {
-		font-size: $textSm;
+		font-size: map-get($map:$fontSizes,$key:'fSize4');
 		padding: 0.5rem 2rem;
+	}
 	}
 }
 
@@ -91,15 +86,22 @@ form {
 form {
 	label {
 		width: $widthTotal;
-		font-size:$textLg;
 		padding-top: 1rem;
+		h5 {
+			font-size: map-get($map:$fontSizes,$key:'fSize4')
+		}
 	}
 }
 
-input, textarea, select {
-	  font-size: $textLg;
+.btn-enviar {
+	font-size: map-get($map:$fontSizes,$key:'fSize3')
+}
+
+
+input, textarea, select, option {
 	  margin-bottom: 1rem;
 	  width: $widthTotal;
 	  background : none;
+
 }
 
