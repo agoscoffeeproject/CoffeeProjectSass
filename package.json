@@ -1,7 +1,7 @@
 {
-  "name": "desafio_git_hub",
+  "name": "Coffee_Project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Página web con información relevante del mundo del café.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

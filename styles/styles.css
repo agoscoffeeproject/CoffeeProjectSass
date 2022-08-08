@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  background-image: url(../img/wood.jpg);
+  background-image: url(../img/wood.webp);
   background-position: center;
   max-width: 100%;
   margin: auto;
@@ -153,6 +153,7 @@ footer {
 .iconos__redes {
   max-width: 35px;
   max-height: 35px;
+  padding-right: 1rem;
 }
 
 .bg-form {
